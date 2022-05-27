@@ -68,3 +68,10 @@ header nav a{
     text-decoration: none;
     color: black;
 }
+
+/* css de carta*/
+
+.carta h3{
+    font-size: 1.3em;
+    font-weight: bold;
+}
