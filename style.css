@@ -75,3 +75,18 @@ header nav a{
     font-size: 1.3em;
     font-weight: bold;
 }
+
+/* css de contacto*/
+
+.principal_contacto{
+    text-align: center;
+}
+
+.principal_contacto iframe{
+    width: 80%;
+    margin: 10px 95px;
+}
+
+.principal_contacto .iconos img{
+    margin: 0 25px;
+}
