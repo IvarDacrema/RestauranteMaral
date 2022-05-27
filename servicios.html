@@ -9,11 +9,11 @@
 </head>
 <body>
     <header class="cabecera">
-        <h1>Maral</h1>
+        <a href="index.html"><h1>Maral</h1></a>
         <nav>
             <li><a href="nosotros.html">Nuestra Historia</a></li>
             <li><a href="carta.html">Carta</a></li>
-            <li><a href="interactivo.html">Servicios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
             <li><a href="contacto.html">Reservas</a></li>
         </nav>
     </header>
@@ -32,7 +32,41 @@
         <div id="recetas">
             <h2>Nuestras Recetas</h2>
             <h3>Te enviamos por semana 5 recetas para que no tengas que pensar más en que cocinar</h3>
-                
+            <form action="">
+                <fieldset>
+                    <legend>Informacion Personal</legend>
+                    
+                    <label>Nombre</label><br>
+                    <input type="text"><br> 
+                    <label>Correo Electronico</label><br>
+                    <input type="email"><br><br>
+
+                    <legend>Gustos Personales</legend>
+                    <label>omnívora/o</label>
+                    <input type="radio" name="orientacioncomida"><br>
+                    <label>Vegetariana/o</label>
+                    <input type="radio" name="orientacioncomida"><br>
+                    <label>Vegana/o</label>
+                    <input type="radio" name="orientacioncomida"><br><br>
+
+                    <label for="hiper">Hipertensíon Arterial</label><br>
+                    <label>Si</label>
+                    <input type="radio" name="hiper"><br>
+                    <label>No</label>
+                    <input type="radio" name="hiper"><br><br>
+                    <label for="lactosa">Intolerante a la Lactosa</label><br>
+                    <label>Si</label>
+                    <input type="radio" name="lactosa"><br>
+                    <label>No</label>
+                    <input type="radio" name="lactosa"><br><br>
+                    <label for="celiaco">Celiaquía</label><br>
+                    <label>Si</label>
+                    <input type="radio" name="celiaco"><br>
+                    <label>No</label>
+                    <input type="radio" name="celiaco"><br><br>  
+                    <input type="submit">
+                </fieldset>
+            </form>
         </div>
     </main>
     
