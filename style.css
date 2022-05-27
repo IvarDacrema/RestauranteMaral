@@ -1,0 +1,50 @@
+/* css de index */
+h1{
+    font-size: 5em;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.principal img{
+    width: 100%;
+}
+
+.pie_pagina p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 40px 0;
+}
+
+/* Css de nosotros*/
+
+.principal_historia h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.principal_historia p{
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.principal_historia p::first-letter{
+    font-weight: bold;
+    font-size: 1.6em;
+}
