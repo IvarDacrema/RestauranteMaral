@@ -34,36 +34,41 @@
             <form action="">
                 <fieldset>
                     <legend>Informacion Personal</legend>
-                    
-                    <label>Nombre</label><br>
-                    <input type="text"><br> 
-                    <label>Correo Electronico</label><br>
-                    <input type="email"><br><br>
+                    <label for="nombre">Nombre y Apellido</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br> 
+                    <label for="correo">Correo Electronico</label><br>
+                    <input type="email" id="correo" name="correo" required><br><br>
 
-                    <legend>Gustos Personales</legend>
-                    <label>omnívora/o</label>
-                    <input type="radio" name="orientacioncomida"><br>
-                    <label>Vegetariana/o</label>
-                    <input type="radio" name="orientacioncomida"><br>
-                    <label>Vegana/o</label>
-                    <input type="radio" name="orientacioncomida"><br><br>
+                    <label for="omnivoro">Omnivoro</label>
+                    <input type="radio" name="orientacioncomida" id="omnivoro" value="omnivoro"><br>
+                    <label for="vegetariano">Vegetariana/o</label>
+                    <input type="radio" name="orientacioncomida" id="vegetariano" value="vegetariano"><br>
+                    <label for="vegano">Vegana/o</label>
+                    <input type="radio" name="orientacioncomida" id="vegano" value="vegano"><br><br>
 
-                    <label for="hiper">Hipertensíon Arterial</label><br>
-                    <label>Si</label>
-                    <input type="radio" name="hiper"><br>
-                    <label>No</label>
-                    <input type="radio" name="hiper"><br><br>
-                    <label for="lactosa">Intolerante a la Lactosa</label><br>
-                    <label>Si</label>
-                    <input type="radio" name="lactosa"><br>
-                    <label>No</label>
-                    <input type="radio" name="lactosa"><br><br>
-                    <label for="celiaco">Celiaquía</label><br>
-                    <label>Si</label>
-                    <input type="radio" name="celiaco"><br>
-                    <label>No</label>
-                    <input type="radio" name="celiaco"><br><br>  
-                    <input type="submit">
+                    <div>
+                        <label for="hipertension">Hipertensíon Arterial</label>
+                        <select name="hiper" id="hipertension">
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <label for="lactosa">Intolerante a la Lactosa</label>
+                        <select name="lacto" id="lactosa">
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <label for="celiaco">Celiaquía</label>
+                        <select name="celiaquia" id="celiaco">
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
+                        </select> 
+                    </div>  
+                    <br>
+                    <input type="submit" value="Enviar">
                 </fieldset>
             </form>
         </div>
