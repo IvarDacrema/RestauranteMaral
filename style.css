@@ -1,41 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* css de index, header y footer*/
 
+.cabecera{
+width: 100%;
+background-color: black;
+}
 h1{
     font-size: 5em;
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none;   
-}
-
-header nav{
-    position: absolute;
-    top: 110px;
-    right: 0%;
-}
-
-
-header nav li{
+    color: white;
+    padding: 10px 0 0 20px;
     display: inline;
-    margin: 0 20px;
 }
-
-header nav a{
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
+.cabecera__menu{
+    display: inline;
 }
-
 .principal img{
     width: 100%;
 }
-
+.pie_pagina{
+    background-color: black;
+    padding: 40px 0;
+}
 .pie_pagina p{
+    color: white;
     font-weight: bold;
     text-align: center;
     font-size: 1.1em;
-    margin: 40px 0;
 }
 
 /* Css de nosotros*/
