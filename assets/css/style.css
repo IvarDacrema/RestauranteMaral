@@ -47,6 +47,7 @@ nav ul li a h1{
 
 .navbar__nosotros{
     position: relative;
+    opacity: 1;
 }
 
 .main__nosotros .restaurante{
@@ -105,12 +106,21 @@ nav ul li a h1{
 
 .navbar__servicios{
     position: relative;
+    opacity: 1;
 }
 
+.servicios__titulos{
+    text-align: center;
+    margin-top: 30px;
+}
+.servicios__texto{
+    text-align: center;
+}
 /* css de carta*/
 
 .navbar__carta{
     position: relative;
+    opacity: 1;
 }
 
 .contenedor__carta{
@@ -157,6 +167,7 @@ nav ul li a h1{
 
 .navbar__contacto{
     position: relative;
+    opacity: 1;
 }
 
 .contactos_titulos{
