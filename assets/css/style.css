@@ -4,3 +4,38 @@
     box-sizing: border-box;
 }
 
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px auto 20px;
+    grid-template-areas:"maral"
+                        "menu"
+                        "principal"
+                        "piePagina";
+}
+.navbarMaral{
+    grid-area: maral;
+}
+.navbarMenu{
+    grid-area: menu;
+}
+.principal{
+    grid-area: principal;
+}
+.piePagina{
+    grid-area: piePagina;
+}
+.cabecera{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.imagenPrincipal img{
+    width: 100%;
+    position: relative;
+}
+
+
