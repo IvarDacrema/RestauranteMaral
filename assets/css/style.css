@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 
+
 .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 50px auto 20px;
+    grid-template-rows: 100px 50px auto 50px;
     grid-template-areas:"maral"
                         "menu"
                         "principal"
                         "piePagina";
 }
-.navbarMaral{
+.cabecera{
     grid-area: maral;
 }
-.navbarMenu{
+.navbar{
     grid-area: menu;
 }
 .principal{
@@ -25,17 +26,66 @@
 .piePagina{
     grid-area: piePagina;
 }
+
+
 .cabecera{
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
-
+.cabecera a h1{
+    color: white;
+    text-decoration: none;
+    font-size: 3em;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+}
 .imagenPrincipal img{
     width: 100%;
-    position: relative;
+}
+.piePagina{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.piePagina p{
+    color: white;
 }
 
 
+.mainNosotros img{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.mainNosotros 
+.mainNosotros p{
+    margin-bottom: 20px;
+}
+.mainNosotros h2{
+    text-align: center;
+}
+
+.contenedorCarta{
+    background-image: ;
+}
+.pastaCarta{
+    width: 100%;
+}
+.tituloCarta{
+    
+}
