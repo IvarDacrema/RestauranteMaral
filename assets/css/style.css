@@ -71,8 +71,7 @@
 .mainNosotros img{
     width: 100%;
     border-bottom: 1px solid black;
-}
-.mainNosotros 
+} 
 .mainNosotros p{
     margin-bottom: 20px;
 }
@@ -80,12 +79,67 @@
     text-align: center;
 }
 
+
 .contenedorCarta{
-    background-image: ;
+    background-color: black;
 }
-.pastaCarta{
+.contenedorCarta img{
     width: 100%;
 }
 .tituloCarta{
-    
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.menuTitulo{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3em;
+}
+.menuSubtitulo{
+    text-align: center;
+}
+
+
+.cocinemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.serviciosTitulos{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.cocinemos iframe{
+    width: 90%;
+}
+.recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario{
+    margin: 20px;
+}
+
+
+
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+.contactosTitulos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.principal h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.iconos a img{
+    padding: 30px;
 }
