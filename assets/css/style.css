@@ -68,14 +68,14 @@
 }
 
 
-.mainNosotros img{
+.principal img{
     width: 100%;
     border-bottom: 1px solid black;
 } 
-.mainNosotros p{
+.principal p{
     margin-bottom: 20px;
 }
-.mainNosotros h2{
+.principal h2{
     text-align: center;
 }
 
@@ -142,4 +142,137 @@
 }
 .iconos a img{
     padding: 30px;
+}
+
+
+@media (min-width:992px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px auto 50px;
+        grid-template-areas:"maral menu"
+                            "principal principal"
+                            "piePagina piePagina";
+    }
+    .cabecera{
+        grid-area: maral;
+    }
+    .navbar{
+        grid-area: menu;
+    }
+    .principal{
+        grid-area: principal;
+    }
+    .piePagina{
+        grid-area: piePagina;
+    }
+    
+    
+    .cabecera{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .cabecera a h1{
+        color: white;
+        text-decoration: none;
+        font-size: 5em;
+        margin-left: 50px;
+    }
+    .navbar{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        padding: 15px;
+        margin-right: 20px;
+    }
+    .imagenPrincipal img{
+        width: 100%;
+    }
+    .piePagina{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .piePagina p{
+        color: white;
+    } 
+
+
+    .principal .restaurante{
+        width: 100%;
+    }
+
+    
+    .contenedorCarta{
+        background-color: black;
+    }
+    .contenedorCarta img{
+        width: 100%;
+    }
+    .tituloCarta{
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+    .menuTitulo{
+        text-align: center;
+        margin: 10px;
+        font-size: 1.3em;
+    }
+    .menuSubtitulo{
+        text-align: center;
+    }
+    
+    
+    .cocinemos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .serviciosTitulos{
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+    .recetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formulario{
+        margin: 20px;
+    }
+    
+    
+    
+    .iconos{
+        display: flex;
+        justify-content: center;
+    }
+    .contactosTitulos{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .principal h3{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .iconos a img{
+        padding: 30px;
+    }
 }
