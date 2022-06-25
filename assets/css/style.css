@@ -1,6 +1,10 @@
 .imgPrincipal{
     width: 100%;
 }
-ul li .precio{
-    color: red;
+
+@media (min-width:700px){
+.segundoItemHistoria{
+    display: flex;
+    flex-direction: row-reverse;
+}
 }
