@@ -1,8 +1,13 @@
-h1 {
-  color: white; }
-
-.imgPrincipal {
-  width: 100%; }
+.navegador {
+  background-color: black; }
+  .navegador a {
+    color: white; }
+    .navegador a:hover {
+      color: #f0d0d0; }
+    .navegador a h1 {
+      font-size: 3em; }
+  .navegador button {
+    background-color: white; }
 
 .centrado h2 {
   animation-duration: 2s;
@@ -14,32 +19,98 @@ h1 {
   100% {
     opacity: 1; } }
 
-@media (min-width: 700px) {
+.piePagina {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .piePagina p {
+    color: white;
+    font-size: 1.2em; }
+
+.mainNosotros h2 {
+  margin-top: 20px; }
+
+.mainNosotros p {
+  padding: 30px;
+  margin-bottom: 0; }
+
+.nuestraHistoria div {
+  padding: 30px; }
+  .nuestraHistoria div img {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0; }
+  .nuestraHistoria div p {
+    margin: 30px 10px 10px 10px; }
+
+.contenedorCarta {
+  position: relative;
+  display: inline-block; }
+  .contenedorCarta img {
+    width: 100%; }
+  .contenedorCarta h2 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 0.5em black; }
+
+.contenedorVideos iframe {
+  margin: 10px 0; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; }
+  .formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px dotted black; }
+    .formulario fieldset .botonEnviar {
+      margin-top: 20px;
+      background-color: #6a6ab9; }
+      .formulario fieldset .botonEnviar:hover {
+        background-color: #3f3f5e; }
+
+.redesContacto a {
+  margin: 10px 10px; }
+
+@media (min-width: 768px) {
+  .navegador .navHamburguesa {
+    display: flex;
+    justify-content: end; }
+    .navegador .navHamburguesa a {
+      font-size: 1.3em; }
   .segundoItemHistoria {
     display: flex;
     flex-direction: row-reverse; }
   .contenedor {
     position: relative;
     display: inline-block; }
-  .centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 25%;
-    height: 60%;
-    border-radius: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-duration: 2s;
-    animation-name: agrandar; }
-    .centrado h2 {
-      color: black;
-      font-size: 180%;
+    .contenedor .centrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      width: 25%;
+      height: 60%;
+      border-radius: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       animation-duration: 2s;
-      animation-name: agrandarLetra; }
+      animation-name: agrandar; }
+      .contenedor .centrado h2 {
+        color: black;
+        font-size: 180%;
+        animation-duration: 2s;
+        animation-name: agrandarLetra; }
   @keyframes agrandar {
     0% {
       width: 0%;
@@ -52,8 +123,26 @@ h1 {
       font-size: 0; }
     100% {
       font-size: 180%; } }
+  .nuestraHistoria div {
+    padding: 30px; }
+    .nuestraHistoria div img {
+      width: 40%;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 0; }
+    .nuestraHistoria div p {
+      margin: 30px 10px 10px 10px; }
   .contenedorVideos iframe:hover {
     height: 370px;
     width: 400px; }
   .contenedorVideos iframe {
     transition: all 2s; } }
+
+.redesContacto a {
+  display: flex;
+  justify-content: center; }
+
+@media (min-width: 992px) {
+  .nuestraHistoria div p {
+    font-size: 1.3em;
+    margin: 30px 10px 10px 10px; } }

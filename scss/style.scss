@@ -1,9 +1,21 @@
 $colorBlanco:white;
-h1{
-    color: $colorBlanco;
-}
-.imgPrincipal{
-    width: 100%;
+$colorNegro: black;
+$colorSeleccion: rgb(240, 208, 208);
+$colorBotonPrimario: rgb(106, 106, 185);
+$colorBotonSecundario: rgb(63, 63, 94);
+
+.navegador{
+    background-color: $colorNegro;
+    a{
+        color: $colorBlanco;
+        &:hover{color: $colorSeleccion;}
+        h1{
+            font-size: 3em;
+        }
+    }
+    button{
+        background-color: $colorBlanco;
+    }
 }
 .centrado h2{
     animation-duration: 2s;
@@ -17,8 +29,99 @@ h1{
         opacity: 1;
     }
 }
+.piePagina{
+    background-color: $colorNegro;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    p{
+        color: $colorBlanco;
+        font-size: 1.2em;
+    }
+}
+.mainNosotros{
+    h2{
+        margin-top: 20px;
+    }
+    p{
+        padding: 30px;
+        margin-bottom: 0;
+    }
+}
+.nuestraHistoria{
+    div{
+        padding: 30px;
+        img{
+            width: 80%;
+            border: 2px solid $colorNegro;
+            border-radius: 5px;
+            padding: 0;
+        }
+        p{
+            margin: 30px 10px 10px 10px;
+        }
+    }
+}
 
-@media (min-width:700px){
+.contenedorCarta{
+    position: relative;
+    display: inline-block;
+        img{
+            width: 100%;
+        }
+        h2{
+            font-size: 1.5em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $colorBlanco;
+            text-shadow: 0 0 0.5em $colorNegro;
+        }
+    }
+
+.contenedorVideos{
+    iframe{
+        margin: 10px 0;
+    }
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 2px dotted $colorNegro;
+        .botonEnviar{
+            margin-top: 20px;
+            background-color: $colorBotonPrimario;
+            &:hover{
+                background-color: $colorBotonSecundario;
+            }
+        }
+    }
+}
+
+.redesContacto{
+    a{
+        margin: 10px 10px;
+    }
+}
+@media (min-width:768px){
+
+.navegador{
+    .navHamburguesa{
+        display: flex;
+        justify-content: end;
+        a{
+            font-size: 1.3em;
+        }
+    }
+}
+
 .segundoItemHistoria{
     display: flex;
     flex-direction: row-reverse;
@@ -26,28 +129,29 @@ h1{
 .contenedor{
     position: relative;
     display: inline-block;
-}
-.centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 25%;
-    height: 60%;
-    border-radius: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-duration: 2s;
-    animation-name: agrandar;
-    h2{
-        color: black;
-        font-size: 180%;
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $colorBlanco;
+        width: 25%;
+        height: 60%;
+        border-radius: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         animation-duration: 2s;
-        animation-name: agrandarLetra;
+        animation-name: agrandar;
+        h2{
+            color: $colorNegro;
+            font-size: 180%;
+            animation-duration: 2s;
+            animation-name: agrandarLetra;
+        }
     }
 }
+
 @keyframes agrandar{
     0%{
         width: 0%;
@@ -66,6 +170,22 @@ h1{
         font-size: 180%;
     }
 }
+
+.nuestraHistoria{
+    div{
+        padding: 30px;
+        img{
+            width: 40%;
+            border: 2px solid $colorNegro;
+            border-radius: 5px;
+            padding: 0;
+        }
+        p{
+            margin: 30px 10px 10px 10px;
+        }
+    }
+}
+
 .contenedorVideos iframe:hover{
     height: 370px;
     width: 400px;
@@ -73,4 +193,21 @@ h1{
 .contenedorVideos iframe{
     transition: all 2s;
 }
+}
+
+.redesContacto{
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width:992px){
+    .nuestraHistoria{
+        div{
+            p{
+                font-size: 1.3em;
+                margin: 30px 10px 10px 10px;
+            }
+        }
+    }
 }
