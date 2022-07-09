@@ -3,7 +3,7 @@
   .navegador a {
     color: white; }
     .navegador a:hover {
-      color: #f0d0d0; }
+      color: #7b7676; }
     .navegador a h1 {
       font-size: 3em; }
   .navegador button {
@@ -28,12 +28,11 @@
     color: white;
     font-size: 1.2em; }
 
-.mainNosotros h2 {
-  margin-top: 20px; }
-
-.mainNosotros p {
-  padding: 30px;
-  margin-bottom: 0; }
+.nuestraHistoria .primerTexto {
+  padding: 0 80px;
+  margin: 30px 0;
+  font-size: 1.1;
+  font-weight: bold; }
 
 .nuestraHistoria div {
   padding: 30px; }
@@ -45,12 +44,12 @@
   .nuestraHistoria div p {
     margin: 30px 10px 10px 10px; }
 
-.contenedorCarta {
+.contenedorCarta, .mainNosotros {
   position: relative;
   display: inline-block; }
-  .contenedorCarta img {
+  .contenedorCarta img, .mainNosotros img {
     width: 100%; }
-  .contenedorCarta h2 {
+  .contenedorCarta h2, .mainNosotros h2 {
     font-size: 1.5em;
     position: absolute;
     top: 50%;
@@ -126,15 +125,16 @@
   .nuestraHistoria div {
     padding: 30px; }
     .nuestraHistoria div img {
-      width: 40%;
+      width: 400px;
+      height: 400px;
       border: 2px solid black;
       border-radius: 5px;
       padding: 0; }
     .nuestraHistoria div p {
       margin: 30px 10px 10px 10px; }
-  .contenedorCarta img {
+  .contenedorCarta img, .mainNosotros img {
     width: 1440px; }
-  .contenedorCarta h2 {
+  .contenedorCarta h2, .mainNosotros h2 {
     font-size: 2em; }
   .contenedorVideos iframe:hover {
     height: 370px;

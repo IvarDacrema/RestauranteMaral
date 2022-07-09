@@ -1,20 +1,26 @@
-$colorBlanco:white;
-$colorNegro: black;
-$colorSeleccion: rgb(240, 208, 208);
-$colorBotonPrimario: rgb(106, 106, 185);
-$colorBotonSecundario: rgb(63, 63, 94);
+$colores:(
+    colorBlanco: white,
+    colorNegro: black,
+    colorSeleccion: rgb(123, 118, 118),
+    colorBotonPrimario: rgb(106, 106, 185),
+    colorBotonSecundario: rgb(63, 63, 94)
+);
+@mixin tamanoImagenes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
 
 .navegador{
-    background-color: $colorNegro;
+    background-color: map-get($colores, colorNegro);
     a{
-        color: $colorBlanco;
-        &:hover{color: $colorSeleccion;}
+        color: map-get($colores, colorBlanco);
+        &:hover{color: map-get($colores, colorSeleccion);}
         h1{
             font-size: 3em;
         }
     }
     button{
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
     }
 }
 .centrado h2{
@@ -30,30 +36,30 @@ $colorBotonSecundario: rgb(63, 63, 94);
     }
 }
 .piePagina{
-    background-color: $colorNegro;
+    background-color: map-get($colores, colorNegro);
     display: flex;
     text-align: center;
     justify-content: center;
     p{
-        color: $colorBlanco;
+        color: map-get($colores, colorBlanco);
         font-size: 1.2em;
     }
 }
 .mainNosotros{
-    h2{
-        margin-top: 20px;
-    }
-    p{
-        padding: 30px;
-        margin-bottom: 0;
-    }
+    @extend .contenedorCarta;
 }
 .nuestraHistoria{
+    .primerTexto{
+        padding: 0 80px;
+        margin: 30px 0;
+        font-size: 1.1;
+        font-weight: bold;
+    }
     div{
         padding: 30px;
         img{
             width: 80%;
-            border: 2px solid $colorNegro;
+            border: 2px solid map-get($colores, colorNegro);
             border-radius: 5px;
             padding: 0;
         }
@@ -75,8 +81,8 @@ $colorBotonSecundario: rgb(63, 63, 94);
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: $colorBlanco;
-            text-shadow: 0 0 0.5em $colorNegro;
+            color: map-get($colores, colorBlanco);
+            text-shadow: 0 0 0.5em map-get($colores, colorNegro);
         }
     }
 
@@ -94,12 +100,12 @@ $colorBotonSecundario: rgb(63, 63, 94);
         display: flex;
         flex-direction: column;
         padding: 20px;
-        border: 2px dotted $colorNegro;
+        border: 2px dotted map-get($colores, colorNegro);
         .botonEnviar{
             margin-top: 20px;
-            background-color: $colorBotonPrimario;
+            background-color: map-get($colores, colorBotonPrimario);
             &:hover{
-                background-color: $colorBotonSecundario;
+                background-color: map-get($colores, colorBotonSecundario);
             }
         }
     }
@@ -110,8 +116,8 @@ $colorBotonSecundario: rgb(63, 63, 94);
         margin: 10px 10px;
     }
 }
-@media (min-width:768px){
 
+@media (min-width:768px){
 .navegador{
     .navHamburguesa{
         display: flex;
@@ -134,7 +140,7 @@ $colorBotonSecundario: rgb(63, 63, 94);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         width: 25%;
         height: 60%;
         border-radius: 200px;
@@ -144,7 +150,7 @@ $colorBotonSecundario: rgb(63, 63, 94);
         animation-duration: 2s;
         animation-name: agrandar;
         h2{
-            color: $colorNegro;
+            color: map-get($colores, colorNegro);
             font-size: 180%;
             animation-duration: 2s;
             animation-name: agrandarLetra;
@@ -175,8 +181,8 @@ $colorBotonSecundario: rgb(63, 63, 94);
     div{
         padding: 30px;
         img{
-            width: 40%;
-            border: 2px solid $colorNegro;
+            @include tamanoImagenes(400px,400px);
+            border: 2px solid map-get($colores, colorNegro);
             border-radius: 5px;
             padding: 0;
         }
