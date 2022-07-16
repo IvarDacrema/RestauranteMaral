@@ -119,10 +119,18 @@ $colores:(
 
 @media (min-width:768px){
 .navegador{
+    height: 115px;
+    a{
+        h1{
+            margin-left: 50px;
+        }
+    }
     .navHamburguesa{
         display: flex;
         justify-content: end;
+        margin-right: 50px;
         a{
+            margin: 0 5px;
             font-size: 1.3em;
         }
     }

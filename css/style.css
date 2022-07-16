@@ -80,11 +80,17 @@
   margin: 10px 10px; }
 
 @media (min-width: 768px) {
-  .navegador .navHamburguesa {
-    display: flex;
-    justify-content: end; }
-    .navegador .navHamburguesa a {
-      font-size: 1.3em; }
+  .navegador {
+    height: 115px; }
+    .navegador a h1 {
+      margin-left: 50px; }
+    .navegador .navHamburguesa {
+      display: flex;
+      justify-content: end;
+      margin-right: 50px; }
+      .navegador .navHamburguesa a {
+        margin: 0 5px;
+        font-size: 1.3em; }
   .segundoItemHistoria {
     display: flex;
     flex-direction: row-reverse; }
