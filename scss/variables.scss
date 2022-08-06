@@ -1,0 +1,11 @@
+$colores:(
+    colorBlanco: white,
+    colorNegro: black,
+    colorSeleccion: rgb(123, 118, 118),
+    colorBotonPrimario: rgb(106, 106, 185),
+    colorBotonSecundario: rgb(63, 63, 94)
+);
+@mixin tamanoImagenes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}

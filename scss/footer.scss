@@ -1,0 +1,10 @@
+.piePagina{
+    background-color: map-get($colores, colorNegro);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    p{
+        color: map-get($colores, colorBlanco);
+        font-size: 1.2em;
+    }
+}

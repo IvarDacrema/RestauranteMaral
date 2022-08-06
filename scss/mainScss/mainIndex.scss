@@ -1,0 +1,59 @@
+.centrado h2{
+    animation-duration: 2s;
+    animation-name: aparece;
+}
+@keyframes aparece{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (min-width:768px){
+.contenedor{
+    position: relative;
+    display: inline-block;
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: map-get($colores, colorBlanco);
+        width: 25%;
+        height: 60%;
+        border-radius: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-duration: 2s;
+        animation-name: agrandar;
+        h2{
+            color: map-get($colores, colorNegro);
+            font-size: 180%;
+            animation-duration: 2s;
+            animation-name: agrandarLetra;
+        }
+    }
+}
+
+@keyframes agrandar{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    100%{
+        width: 25%;
+        height: 60%;
+    }
+}
+@keyframes agrandarLetra{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 180%;
+    }
+}
+}

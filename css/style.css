@@ -9,76 +9,6 @@
   .navegador button {
     background-color: white; }
 
-.centrado h2 {
-  animation-duration: 2s;
-  animation-name: aparece; }
-
-@keyframes aparece {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-.piePagina {
-  background-color: black;
-  display: flex;
-  text-align: center;
-  justify-content: center; }
-  .piePagina p {
-    color: white;
-    font-size: 1.2em; }
-
-.nuestraHistoria .primerTexto {
-  padding: 0 80px;
-  margin: 30px 0;
-  font-size: 1.1;
-  font-weight: bold; }
-
-.nuestraHistoria div {
-  padding: 30px; }
-  .nuestraHistoria div img {
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 0; }
-  .nuestraHistoria div p {
-    margin: 30px 10px 10px 10px; }
-
-.contenedorCarta, .mainNosotros {
-  position: relative;
-  display: inline-block; }
-  .contenedorCarta img, .mainNosotros img {
-    width: 100%; }
-  .contenedorCarta h2, .mainNosotros h2 {
-    font-size: 1.5em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 0 0 0.5em black; }
-
-.contenedorVideos iframe {
-  margin: 10px 0; }
-
-.formulario {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0; }
-  .formulario fieldset {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 2px dotted black; }
-    .formulario fieldset .botonEnviar {
-      margin-top: 20px;
-      background-color: #6a6ab9; }
-      .formulario fieldset .botonEnviar:hover {
-        background-color: #3f3f5e; }
-
-.redesContacto a {
-  margin: 10px 10px; }
-
 @media (min-width: 768px) {
   .navegador {
     height: 115px; }
@@ -90,10 +20,19 @@
       margin-right: 50px; }
       .navegador .navHamburguesa a {
         margin: 0 5px;
-        font-size: 1.3em; }
-  .segundoItemHistoria {
-    display: flex;
-    flex-direction: row-reverse; }
+        font-size: 1.3em; } }
+
+.centrado h2 {
+  animation-duration: 2s;
+  animation-name: aparece; }
+
+@keyframes aparece {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (min-width: 768px) {
   .contenedor {
     position: relative;
     display: inline-block; }
@@ -127,7 +66,28 @@
     0% {
       font-size: 0; }
     100% {
-      font-size: 180%; } }
+      font-size: 180%; } } }
+
+.nuestraHistoria .primerTexto {
+  padding: 0 80px;
+  margin: 30px 0;
+  font-size: 1.1;
+  font-weight: bold; }
+
+.nuestraHistoria div {
+  padding: 30px; }
+  .nuestraHistoria div img {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0; }
+  .nuestraHistoria div p {
+    margin: 30px 10px 10px 10px; }
+
+@media (min-width: 768px) {
+  .segundoItemHistoria {
+    display: flex;
+    flex-direction: row-reverse; }
   .nuestraHistoria div {
     padding: 30px; }
     .nuestraHistoria div img {
@@ -137,11 +97,52 @@
       border-radius: 5px;
       padding: 0; }
     .nuestraHistoria div p {
-      margin: 30px 10px 10px 10px; }
+      margin: 30px 10px 10px 10px; } }
+
+@media (min-width: 992px) {
+  .nuestraHistoria div p {
+    font-size: 1.3em;
+    margin: 30px 10px 10px 10px; } }
+
+.contenedorCarta, .mainNosotros {
+  position: relative;
+  display: inline-block; }
+  .contenedorCarta img, .mainNosotros img {
+    width: 100%; }
+  .contenedorCarta h2, .mainNosotros h2 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 0.5em black; }
+
+@media (min-width: 768px) {
   .contenedorCarta img, .mainNosotros img {
     width: 1440px; }
   .contenedorCarta h2, .mainNosotros h2 {
-    font-size: 2em; }
+    font-size: 2em; } }
+
+.contenedorVideos iframe {
+  margin: 10px 0; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; }
+  .formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px dotted black; }
+    .formulario fieldset .botonEnviar {
+      margin-top: 20px;
+      background-color: #6a6ab9; }
+      .formulario fieldset .botonEnviar:hover {
+        background-color: #3f3f5e; }
+
+@media (min-width: 768px) {
   .contenedorVideos iframe:hover {
     height: 370px;
     width: 400px; }
@@ -149,10 +150,15 @@
     transition: all 2s; } }
 
 .redesContacto a {
+  margin: 10px 10px;
   display: flex;
   justify-content: center; }
 
-@media (min-width: 992px) {
-  .nuestraHistoria div p {
-    font-size: 1.3em;
-    margin: 30px 10px 10px 10px; } }
+.piePagina {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .piePagina p {
+    color: white;
+    font-size: 1.2em; }
